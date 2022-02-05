@@ -2,25 +2,24 @@
 Recipe app API source code.
 
 ### Run test
-To run all unit tests and see if they are passed using the command
+To run all unit tests go to the root directory and running:
 ```
 docker-compose run --rm app sh -c "python manage.py test && flake8"
 ```
 
 ### Run the app
-To run the app use
+Run the app by using:
 ```
 docker-compose up
 ```
-Then you should go to the ``` http://127.0.0.1:8000/api/user/create/ ``` firstly to create a user.
 
-### About using the app
-Firstly, you need to create your own user go to the
+### Usage
+You need to create your own user with unique token before using the API. To do that go to the:
 ```
 http://127.0.0.1:8000/api/user/create/
 ```
-Then you will have a token, with help of what you can use this app because the app required token authorization.
-The main address of the app is
+Then you will have a token, use it in header of your request to access the data.
+The root dir address is:
 ```
 http://127.0.0.1:8000/api/recipe/
 ```
