@@ -2,7 +2,7 @@
 Recipe app API source code.
 
 ### Run test
-To run all unit tests go to the root directory and running:
+To run all unit tests go to the root directory and run:
 ```
 docker-compose run --rm app sh -c "python manage.py test && flake8"
 ```
